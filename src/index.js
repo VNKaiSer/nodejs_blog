@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const path = require('path')
 const hbs = require('express-handlebars');
 
-
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(morgan('combined'))
 
 // Temple handlebars
